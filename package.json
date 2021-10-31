@@ -1,0 +1,27 @@
+{
+  "name": "timepiece",
+  "version": "1.0.0",
+  "description": "functioning clock",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessecaunter/timepiece.git"
+  },
+  "keywords": [
+    "time",
+    "clock"
+  ],
+  "author": "jesse_caunter <js.caunter@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessecaunter/timepiece/issues"
+  },
+  "homepage": "https://github.com/jessecaunter/timepiece#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

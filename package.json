@@ -5,6 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server",
+    "build": "npm run webpack -- --mode=production",
+    "webpack": "webpack --config client/webpack.config.js",
     "test": "test"
   },
   "repository": {
@@ -25,6 +27,9 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-loader": "^8.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack": "^5.61.0",

@@ -23,5 +23,9 @@
   "homepage": "https://github.com/jessecaunter/timepiece#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
   }
 }

@@ -7,6 +7,9 @@
     "start": "node server",
     "build": "npm run webpack -- --mode=production",
     "webpack": "webpack --config client/webpack.config.js",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "npm run webpack -- --watch",
+    "dev:server": "nodemon server",
     "test": "test"
   },
   "babel": {
@@ -37,6 +40,8 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "babel-loader": "^8.2.3",
+    "nodemon": "^2.0.14",
+    "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack": "^5.61.0",

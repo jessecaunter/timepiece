@@ -12,6 +12,6 @@ export default function Clock() {
     }, [])
 
     return (
-        <h1>{date.toTimeString()}</h1>
+        <h1>{date.toLocaleTimeString()}</h1>
     )
 }

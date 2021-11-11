@@ -6,7 +6,9 @@ export default function App() {
 
     return (
         <>
-            <Clock />
+            <main className='container'>
+                <Clock />
+            </main>
         </>
     )
 }

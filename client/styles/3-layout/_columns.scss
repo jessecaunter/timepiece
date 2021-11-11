@@ -1,0 +1,7 @@
+@use '../1-helpers/vars';
+
+.container {
+    position: relative;
+    max-width: 100%;
+    padding: 0 vars.$base-size * 3;
+}

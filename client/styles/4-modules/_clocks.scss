@@ -1,0 +1,19 @@
+@use '../1-helpers/vars';
+
+.clock {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: vars.$granny-smith;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 50%;
+    width: 16px;
+    height: 160px;
+    background-color: vars.$middle-green;
+}

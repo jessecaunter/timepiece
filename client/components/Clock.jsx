@@ -12,6 +12,13 @@ export default function Clock() {
     }, [])
 
     return (
-        <h1>{date.toLocaleTimeString()}</h1>
+        <div className='container'>
+            <h1>{date.toLocaleTimeString()}</h1>
+            <div className='clock'>
+                <div className='second hand'></div>
+                <div className='minute hand'></div>
+                <div className='hour hand'></div>
+            </div>
+        </div>
     )
 }

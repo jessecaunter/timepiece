@@ -1,5 +1,10 @@
 @use '../1-helpers/vars';
 
+@keyframes rotate {
+    from { transform: rotate(0); }
+    to { transform: rotate(1turn); }
+}
+
 .clock {
     width: 400px;
     height: 400px;
@@ -16,4 +21,16 @@
     width: 16px;
     height: 160px;
     background-color: vars.$middle-green;
+}
+
+.second.hand {
+    animation: rotate steps(60) vars.$minute infinite;
+}
+
+.minute.hand {
+    animation: rotate linear vars.$hour infinite;
+}
+
+.hour.hand {
+    animation: rotate linear (vars.$hour * 12) infinite;
 }

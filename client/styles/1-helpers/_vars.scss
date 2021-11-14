@@ -17,3 +17,8 @@ $base-size: 1rem;
 // Font Variables
 $heading: 'PT Serif', serif;   
 $paragraph: 'Exo 2', sans-serif;
+
+// Clock Variables
+$second: 1s;
+$minute: calc($second * 60);
+$hour: calc($minute * 60);

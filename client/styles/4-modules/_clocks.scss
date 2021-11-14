@@ -1,3 +1,4 @@
+@use '../1-helpers/mixins';
 @use '../1-helpers/vars';
 
 @keyframes rotate {
@@ -24,13 +25,13 @@
 }
 
 .second.hand {
-    animation: rotate steps(60) vars.$minute infinite;
+    @include mixins.rotate(steps(60), vars.$minute);
 }
 
 .minute.hand {
-    animation: rotate linear vars.$hour infinite;
+    @include mixins.rotate(linear, vars.$hour);
 }
 
 .hour.hand {
-    animation: rotate linear (vars.$hour * 12) infinite;
+    @include mixins.rotate(linear, (vars.$hour * 12));
 }

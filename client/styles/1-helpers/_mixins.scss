@@ -1,3 +1,9 @@
 @mixin rotate($duration, $method) {
     animation: rotate $duration $method infinite;
 }
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}

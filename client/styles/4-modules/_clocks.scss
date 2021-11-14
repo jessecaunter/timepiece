@@ -1,11 +1,6 @@
 @use '../1-helpers/mixins';
 @use '../1-helpers/vars';
 
-@keyframes rotate {
-    from { transform: rotate(0); }
-    to { transform: rotate(1turn); }
-}
-
 .clock {
     width: 400px;
     height: 400px;
@@ -22,6 +17,10 @@
     width: 16px;
     height: 160px;
     background-color: vars.$middle-green;
+    @include mixins.keyframes(rotate) {
+        to { transform: rotate(1turn); }
+        from { transform: rotate(0); }
+    }
 }
 
 .second.hand {

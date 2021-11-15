@@ -17,6 +17,7 @@
     width: 16px;
     height: 160px;
     background-color: vars.$middle-green;
+    transform-origin: center 0;
     @include mixins.keyframes(rotate) {
         to { transform: rotate(1turn); }
         from { transform: rotate(0); }

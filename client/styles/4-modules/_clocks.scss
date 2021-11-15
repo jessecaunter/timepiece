@@ -12,10 +12,7 @@
 
 .hand {
     position: absolute;
-    left: calc(50% - 8px);
     top: 50%;
-    width: 16px;
-    height: 160px;
     background-color: vars.$middle-green;
     transform-origin: center 0;
     @include mixins.keyframes(rotate) {
@@ -25,13 +22,22 @@
 }
 
 .second.hand {
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 160px;
     @include mixins.rotate(steps(60), vars.$minute);
 }
 
 .minute.hand {
+    left: calc(50% - 4px);
+    width: 8px;
+    height: 150px;
     @include mixins.rotate(linear, vars.$hour);
 }
 
 .hour.hand {
+    left: calc(50% - 8px);
+    width: 16px;
+    height: 130px;
     @include mixins.rotate(linear, (vars.$hour * 12));
 }

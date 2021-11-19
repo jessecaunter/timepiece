@@ -22,3 +22,11 @@ $paragraph: 'Exo 2', sans-serif;
 $second: 1s;
 $minute: calc($second * 60);
 $hour: calc($minute * 60);
+
+// Variables to Set Time
+$setTimeMinute: 0;
+$setTimeHour: 18;
+
+// Animation Delay variables
+$timeShiftMinute: calc($setTimeMinute * $minute);
+$timeShiftHour: calc($setTimeHour * $hour);

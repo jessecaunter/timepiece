@@ -24,8 +24,8 @@ $minute: calc($second * 60);
 $hour: calc($minute * 60);
 
 // Variables to Set Time
-$setTimeMinute: 0;
-$setTimeHour: 18;
+$setTimeMinute: 44;
+$setTimeHour: 16;
 
 // Animation Delay variables
 $timeShiftMinute: calc($setTimeMinute * $minute);

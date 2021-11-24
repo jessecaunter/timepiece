@@ -1,13 +1,20 @@
 # Timepiece
 
 ## Goal
-To have a functioning React app displaying a clock with the correct time.
+Create a React app displaying both an analog and digital clock, each showing the correct time.
+
+At this stage, the time shown will rely on client's local machine being set to the correct time/timezone. My goal in future is to have greater control over the accuracy.
 
 ## To Do
+
+- [ ] Create basic structure of the digital clock
+
+## Completed Tasks
+
 - [x] Set up server
 - [x] Set up client directory structure
-- [x] Display a time on the screen once when page loads
+- [x] Display a time on the screen once when page loads (using JavaScript Date() object)
 - [x] Have component re-render so that it's always showing current time
-- [ ] Design clock face
-- [ ] Design hands
-- [ ] Implement rotation functionality for the hands
+- [x] Create basic clock face
+- [x] Create three basic hands
+- [x] Implement rotation functionality for the hands

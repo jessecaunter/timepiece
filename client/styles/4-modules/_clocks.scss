@@ -33,14 +33,12 @@
     left: calc(50% - 4px);
     width: 8px;
     height: 170px;
-    @include mixins.rotate(linear, vars.$hour);
-    animation-delay: calc(vars.$timeShiftMinute * -1);
+    @include mixins.rotate(linear, vars.$hour, (vars.$timeShiftMinute * -1));
 }
 
 .hour.hand {
     left: calc(50% - 8px);
     width: 16px;
     height: 100px;
-    @include mixins.rotate(linear, (vars.$hour * 12));
-    animation-delay: calc(vars.$timeShiftHour * -1)
+    @include mixins.rotate(linear, (vars.$hour * 12), (vars.$timeShiftHour * -1));
 }

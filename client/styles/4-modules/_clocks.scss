@@ -14,12 +14,6 @@
     transform: rotate(180deg);
 }
 
-.digital.clock {
-    width: 160px;
-    height: 40px;
-    display: flex;
-}
-
 .hand {
     position: absolute;
     top: calc(50% - 20px);
@@ -50,4 +44,26 @@
     width: 16px;
     height: 100px;
     @include mixins.rotate(linear, (vars.$hour * 12), ((vars.$timeShiftHour + vars.$timeShiftMinute) * -1));
+}
+
+.digital.clock {
+    width: 160px;
+    height: 40px;
+    display: flex;
+}
+
+.section {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        width: 51px;
+        height: 40px;
+        font-size: 31px;
+        text-align: center;
+        padding-top: 2px;
+    }
 }

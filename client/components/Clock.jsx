@@ -34,20 +34,20 @@ export default function Clock() {
     return (
         <div className='container'>
             <h1>{date.toLocaleTimeString()}</h1>
-            <div className='clock'>
+            <div className='analog clock'>
                 <div className='second hand'></div>
                 <div className='minute hand'></div>
                 <div className='hour hand'></div>
             </div>
-            <div className='digital-clock'>
-                <div className='second section'>
-                    <ul>{listSeconds}</ul>
+            <div className='digital clock'>
+                <div className='hour section'>
+                    <ul>{listHours}</ul>
                 </div>
                 <div className='minute section'>
                     <ul>{listMinutes}</ul>
                 </div>
-                <div className='hour section'>
-                    <ul>{listHours}</ul>
+                <div className='second section'>
+                    <ul>{listSeconds}</ul>
                 </div>
             </div>
         </div>

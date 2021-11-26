@@ -4,9 +4,9 @@ export default function Clock() {
     // Local state
     const [date, setDate] = useState(new Date())
     // Other variables
-    const seconds = [...Array(24).keys()]
-    const minutes = [...Array(60).keys()]
-    const hours = minutes
+    const seconds = [...Array(60).keys()]
+    const minutes = seconds
+    const hours = [...Array(24).keys()]
     const listSeconds = seconds.map(second =>
         <li key={second.toString()}>
             {second}

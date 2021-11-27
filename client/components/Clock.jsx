@@ -8,13 +8,13 @@ export default function Clock() {
     const minutes = seconds
     const hours = [...Array(24).keys()]
     const listSeconds = seconds.map(second =>
-        <li key={second.toString()}>
-            {second}
+        <li key={second.toString().padStart(2, '0')}>
+            {second.toString().padStart(2, '0')}
         </li>
     )
     const listMinutes = minutes.map(minute =>
-        <li key={minute.toString()}>
-            {minute}
+        <li key={minute.toString().padStart(2, '0')}>
+            {minute.toString().padStart(2, '0')}
         </li>
     )
     const listHours = hours.map(hour =>

@@ -47,9 +47,10 @@
 }
 
 .digital.clock {
-    width: 160px;
-    height: 40px;
+    width: 220px;
+    height: 80px;
     display: flex;
+    justify-content: center;
 }
 
 .section {
@@ -60,10 +61,11 @@
     }
 
     li {
-        width: 51px;
-        height: 40px;
-        font-size: 31px;
+        width: 62px;
+        height: 80px;
+        font-size: 40px;
         text-align: center;
-        padding-top: 2px;
+        padding-top: 8px;
+        color: vars.$middle-green;
     }
 }

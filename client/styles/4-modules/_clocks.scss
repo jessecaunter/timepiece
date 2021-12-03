@@ -83,3 +83,17 @@
         animation: tick steps(60) vars.$minute infinite;
     }
 }
+
+.minute {
+    ul {
+        animation: tick steps(60) vars.$hour infinite;
+        animation-delay: calc(vars.$timeShiftMinute * -1)
+    }
+}
+
+.hour {
+    ul {
+        animation: tick steps(24) calc(vars.$hour * 24) infinite;
+        animation-delay: calc((vars.$timeShiftHour + vars.$timeShiftMinute) * -1)
+    }
+}

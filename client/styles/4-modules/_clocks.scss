@@ -95,3 +95,14 @@
         @include mixins.tick(steps(24), (vars.$hour * 24), ((vars.$timeShiftHour + vars.$timeShiftMinute) * -1));
     }
 }
+
+.minute.section,
+.hour.section {
+    li::after {
+        content: ":";
+        margin-left: 2px;
+        position: absolute;
+        font-size: 31px;
+        padding-top: 6px;
+    }
+}

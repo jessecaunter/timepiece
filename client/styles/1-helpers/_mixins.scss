@@ -1,6 +1,11 @@
 @mixin rotate($duration, $method, $delay:0) {
     animation: rotate $duration $method infinite;
-    animation-delay: calc($delay)
+    animation-delay: calc($delay);
+}
+
+@mixin tick($timing, $duration, $delay:0) {
+    animation: tick $timing $duration infinite;
+    animation-delay: calc($delay);
 }
 
 @mixin keyframes($name) {

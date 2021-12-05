@@ -29,7 +29,7 @@
     left: calc(50% - 2px);
     width: 4px;
     height: 180px;
-    @include mixins.rotate(steps(60), vars.$minute);
+    @include mixins.rotate(steps(60), vars.$minute, (vars.$timeShiftSecond * -1));
 }
 
 .minute.hand {
@@ -80,7 +80,7 @@
 
 .second {
     ul {
-        @include mixins.tick(steps(60), vars.$minute);
+        @include mixins.tick(steps(60), vars.$minute, (vars.$timeShiftSecond * -1));
     }
 }
 

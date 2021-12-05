@@ -7,7 +7,7 @@ At this stage, the time shown will rely on client's local machine being set to t
 
 ## To Do
 
-- [ ] Create basic structure of the digital clock
+- [ ] Refactor analog and digital clocks into separate components
 
 ## Completed Tasks
 
@@ -18,3 +18,5 @@ At this stage, the time shown will rely on client's local machine being set to t
 - [x] Create basic clock face
 - [x] Create three basic hands
 - [x] Implement rotation functionality for the hands
+- [x] Create basic structure of the digital clock
+- [x] Have both clocks always displaying the correct time

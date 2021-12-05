@@ -28,7 +28,7 @@ export default function Clock() {
         document.documentElement.style.setProperty('--set-seconds', date.getSeconds())
         document.documentElement.style.setProperty('--set-minutes', date.getMinutes())
         document.documentElement.style.setProperty('--set-hours', date.getHours())
-    }, [date])
+    }, [])
 
     useEffect(() => {
         const interval = setInterval(() => {

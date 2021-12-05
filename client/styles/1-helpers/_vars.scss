@@ -24,15 +24,11 @@ $minute: calc($second * 60);
 $hour: calc($minute * 60);
 
 // Variables to Set Time
-$setTimeSecond: 7;
-$setTimeMinute: 59;
-$setTimeHour: 15;
-
 $setTimeSeconds: var(--set-seconds);
 $setTimeMinutes: var(--set-minutes);
 $setTimeHours: var(--set-hours);
 
 // Animation Delay variables
-$timeShiftSecond: calc($setTimeSecond * $second);
-$timeShiftMinute: calc($setTimeMinute * $minute);
-$timeShiftHour: calc($setTimeHour * $hour);
+$timeShiftSecond: calc($setTimeSeconds * $second);
+$timeShiftMinute: calc($setTimeMinutes * $minute);
+$timeShiftHour: calc($setTimeHours * $hour);

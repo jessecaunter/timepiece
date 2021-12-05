@@ -1,10 +1,6 @@
 @use '../1-helpers/mixins';
 @use '../1-helpers/vars';
 
-h1 {
-    font-size: calc(vars.$setTimeSeconds * 1px);
-}
-
 .clock {
     background-color: vars.$granny-smith;
     margin: 0 auto;
@@ -33,21 +29,21 @@ h1 {
     left: calc(50% - 2px);
     width: 4px;
     height: 180px;
-    @include mixins.rotate(steps(60), vars.$minute, (vars.$timeShiftSecond * -1));
+    @include mixins.rotate(steps(60), vars.$minute, calc(vars.$timeShiftSecond * -1));
 }
 
 .minute.hand {
     left: calc(50% - 4px);
     width: 8px;
     height: 170px;
-    @include mixins.rotate(linear, vars.$hour, (vars.$timeShiftMinute * -1));
+    @include mixins.rotate(linear, vars.$hour, calc((vars.$timeShiftMinute + vars.$timeShiftSecond) * -1));
 }
 
 .hour.hand {
     left: calc(50% - 8px);
     width: 16px;
     height: 100px;
-    @include mixins.rotate(linear, (vars.$hour * 12), ((vars.$timeShiftHour + vars.$timeShiftMinute) * -1));
+    @include mixins.rotate(linear, (vars.$hour * 12), calc((vars.$timeShiftHour + vars.$timeShiftMinute) * -1));
 }
 
 .digital.clock {
@@ -84,19 +80,19 @@ h1 {
 
 .second {
     ul {
-        @include mixins.tick(steps(60), vars.$minute, (vars.$timeShiftSecond * -1));
+        @include mixins.tick(steps(60), vars.$minute, calc(vars.$timeShiftSecond * -1));
     }
 }
 
 .minute {
     ul {
-        @include mixins.tick(steps(60), vars.$hour, (vars.$timeShiftMinute * -1));
+        @include mixins.tick(steps(60), vars.$hour, calc((vars.$timeShiftMinute + vars.$timeShiftSecond) * -1));
     }
 }
 
 .hour {
     ul {
-        @include mixins.tick(steps(24), (vars.$hour * 24), ((vars.$timeShiftHour + vars.$timeShiftMinute) * -1));
+        @include mixins.tick(steps(24), (vars.$hour * 24), calc((vars.$timeShiftHour + vars.$timeShiftMinute) * -1));
     }
 }
 
